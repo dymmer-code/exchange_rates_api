@@ -4,7 +4,7 @@ defmodule ExchangeRatesApi.MixProject do
   def project do
     [
       app: :exchange_rates_api,
-      version: "0.1.0-rc.1",
+      version: "0.1.1",
       name: "ExchangeRatesApi",
       description: "Exchange Rates API",
       package: package(),
@@ -30,7 +30,7 @@ defmodule ExchangeRatesApi.MixProject do
     [
       {:jason, ">= 1.0.0"},
       {:tesla, "~> 1.1.0"},
-      {:nebulex, "~> 1.0.0-rc.3"},
+      {:nebulex, "~> 1.0.1"},
 
       {:excoveralls, "~> 0.10.3", only: :test},
       {:ex_doc, "~> 0.19.0", only: :dev},
