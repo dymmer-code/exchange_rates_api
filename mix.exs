@@ -4,12 +4,12 @@ defmodule ExchangeRatesApi.MixProject do
   def project do
     [
       app: :exchange_rates_api,
-      version: "0.1.1",
+      version: "0.2.0",
       name: "ExchangeRatesApi",
       description: "Exchange Rates API",
       package: package(),
       source_url: "https://github.com/altenwald/exchange_rates_api",
-      elixir: "~> 1.7",
+      elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
       test_coverage: [tool: ExCoveralls],
       aliases: aliases(),
@@ -28,12 +28,12 @@ defmodule ExchangeRatesApi.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:jason, ">= 1.0.0"},
-      {:tesla, "~> 1.1.0"},
-      {:nebulex, "~> 1.0.1"},
+      {:jason, "~> 1.2"},
+      {:tesla, "~> 1.3"},
+      {:nebulex, "~> 1.2"},
 
-      {:excoveralls, "~> 0.10.3", only: :test},
-      {:ex_doc, "~> 0.19.0", only: :dev},
+      {:excoveralls, "~> 0.13", only: :test},
+      {:ex_doc, "~> 0.23", only: :dev},
     ]
   end
 

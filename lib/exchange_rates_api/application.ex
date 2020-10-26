@@ -4,12 +4,10 @@ defmodule ExchangeRatesApi.Application do
   # See https://hexdocs.pm/elixir/Application.html
   # for more information on OTP Applications
   def start(_type, _args) do
-    import Supervisor.Spec
-
     # Define workers and child supervisors to be supervised
     children = [
       # Start cache system
-      supervisor(ExchangeRatesApi.Cache, []),
+      ExchangeRatesApi.Cache
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
