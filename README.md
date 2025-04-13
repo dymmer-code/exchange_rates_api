@@ -1,3 +1,10 @@
+> [!WARNING]
+> When I started with this library, the website offered more than 1k requests per month, it was reduced to 100 so, it's not usable for some projects, keep it that in mind if you want to use it.
+> 
+> In addition, during the time I didn't like to use so much dependencies and Nebulex wasn't my preference these days for cache so, I guess you can create the API for yourself if you want, it's not so difficult. You have here an example.
+> 
+> Based on everything of this, I decided to discontinued the support and development for this API integration, use it on your own.
+
 # ExchangeRatesApi
 
 Implementation for the API available in this site: https://exchangeratesapi.io/
